@@ -1,0 +1,91 @@
+:root {
+    --light-blue : #D0D6F9;
+}
+
+.dest-content {
+    color: var(--light-blue);
+    font-size: 1.125rem;
+}
+
+.dest-content h3 {
+    text-align: left;
+    margin-bottom: 10.3125rem;
+}
+
+.crew-h3 {
+    text-align:left;
+    margin-left: 0;
+}
+
+.crew-h4 {
+    text-align:left;
+    opacity: 50%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: var(--font-family-bellefair);
+    margin:0;
+}
+
+.med-image {
+    height: 35.75rem;
+}
+
+.crew-menu {
+    max-width: 6rem;
+}
+
+
+.crew-h3 span {
+    opacity : 25%;
+}
+
+.crew-content {
+    flex-direction: column;
+    color: var(--white);
+    max-width: 38.75rem;
+}
+
+.crew-content p {
+    margin-bottom: 5rem;
+    line-height: 1.8rem;
+}
+
+.crew-main {
+    height:100vh;
+}
+
+.main-crew {
+    height: 92vh;
+}
+.btn-slider {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border:none;
+    margin-left:12px;
+    background-color: #ffffff17;
+    cursor: pointer;
+}
+
+ .crew-menu .active {
+    border: none;
+}
+
+a.active .btn-slider {
+    background-color:#fff;
+}
+
+.btn-slider:hover {
+    background-color: #ffffff50;
+}
+
+.btn-slider:active {
+    background-color: #ffffff !important;
+}
+

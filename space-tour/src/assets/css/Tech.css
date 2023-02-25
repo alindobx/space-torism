@@ -1,0 +1,148 @@
+
+.dest-content {
+    color: var(--light-blue);
+    font-size: 1.125rem;
+}
+
+
+.tech-menu {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.inner-module {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.dest-content h3 {
+    text-align: left;
+    margin-bottom: 10.3125rem;
+}
+
+.crew-h3 {
+    text-align:left;
+}
+
+.tech-h4 {
+    text-align:left;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--light-blue)
+}
+
+h5 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: var(--font-family-bellefair);
+    margin:0;
+}
+
+.crew-menu {
+    max-width: 6rem;
+}
+
+.crew-h3 span {
+    opacity : 25%;
+}
+
+.tech-content {
+    display:flex;
+    flex-direction: column;
+    color: var(--white);
+    max-width: 40.1875rem;
+}
+
+.tech-menu li {
+    margin-bottom: 1.8rem;
+}
+
+.tech-content p {
+    margin-bottom: 5rem;
+    line-height: 1.8rem;
+}
+
+.crew-main {
+    height:100vh;
+}
+
+.main-crew {
+    height: 92vh;
+}
+
+.btn-space-slider {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 80px;
+    background-color:transparent;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.2rem;
+}
+
+ .tech-menu .active {
+    border: none;
+}
+
+.med-image {
+    height: 35.75rem;
+}
+
+a.active .btn-space-slider {
+background-color: #fff;
+    color:#000;
+}
+
+.btn-space-slider:hover {
+    border: solid 1px #ffffff;
+}
+
+picture .crew-h3 {
+    display:none;
+}
+
+/*Width 768*/
+@media screen and (max-width: 768px) {
+
+    h5 {
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: flex-end;
+    }
+
+    picture .crew-h3 {
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .crew-h3 {
+        display: none;
+    }
+
+    .techBackground {
+        background-image: url("../../assets/images/background-technology-tablet.jpg");
+    }
+
+    .tech-h4 {
+        text-align: center;
+    }
+
+    .tech-content {
+        order:2;
+    }
+    .inner-module {
+        flex-direction:column;
+    }
+    .space-slider, .tech-menu {
+        display:flex;
+        justify-content: space-evenly;
+    }
+}
+

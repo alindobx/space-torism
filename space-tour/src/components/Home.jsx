@@ -4,7 +4,7 @@ import {changeBackgroundImg} from "./functions/changeBackground";
 export default function Home() {
 
     useEffect(()=> {
-        changeBackgroundImg('homeBackground','destBackground')
+        changeBackgroundImg('homeBackground')
     },[])
 
     return (

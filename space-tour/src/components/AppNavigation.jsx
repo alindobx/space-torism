@@ -43,10 +43,11 @@ export default function AppNavigation() {
                     <div className="menu">
                         <span className="space-line_2"><hr/></span>
                         <ul className="space-menu">
+
                             <NavLink  className="btn-nav" to= "/home"><li>HOME</li></NavLink>
                             <NavLink  className="btn-nav" to="/destination/moon"><li>DESTINATION</li></NavLink>
-                            <NavLink className="btn-nav" to="/crew"><li>CREW</li></NavLink>
-                            <NavLink  className="btn-nav" to="/technology"><li>TECHNOLOGY</li></NavLink>
+                            <NavLink className="btn-nav" to="/crew/commander"><li>CREW</li></NavLink>
+                            <NavLink  className="btn-nav" to="/technology/launch_vehicle"><li>TECHNOLOGY</li></NavLink>
                         </ul>
                     </div>
                 </nav>
@@ -61,8 +62,8 @@ export default function AppNavigation() {
                     <ul className="space-menu">
                         <li> <NavLink className="btn-nav" to="/home"><span>00</span> HOME</NavLink></li>
                         <li> <NavLink className="btn-nav" to="/destination/moon"><span>01</span> DESTINATION</NavLink></li>
-                        <li><NavLink className="btn-nav" to="/crew"><span>02</span> CREW</NavLink></li>
-                        <li> <NavLink className="btn-nav" to="/technology"><span>03</span> TECHNOLOGY</NavLink></li>
+                        <li><NavLink className="btn-nav" to="/crew/commander"><span>02</span> CREW</NavLink></li>
+                        <li> <NavLink className="btn-nav" to="/technology/launch_vehicle"><span>03</span> TECHNOLOGY</NavLink></li>
                     </ul>
                 </div>
             </nav>

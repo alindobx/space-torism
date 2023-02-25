@@ -1,9 +1,12 @@
+
+import { useEffect } from "react";
+import { changeBackgroundImg } from "./functions/changeBackground";
+import {Outlet} from 'react-router-dom'
 export default function Crew() {
+    useEffect(() => {
+        changeBackgroundImg("crewBackground")
+    },[])
     return (
-        <>
-            <section>
-                <h2>Crew</h2>
-            </section>
-        </>
+        <><Outlet /></>
     )
 }

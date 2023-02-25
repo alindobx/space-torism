@@ -29,13 +29,21 @@ body {
   background-repeat: no-repeat;
   height:100vh;
 }
-
+/*background Images*/
 .homeBackground {
   background-image: url("./assets/images/background-home-desktop.jpg");
 }
 
 .destBackground {
   background-image: url("./assets/images/background-destination-desktop.jpg");
+}
+
+.techBackground {
+  background-image: url("./assets/images/background-technology-desktop.jpg");
+}
+
+.crewBackground {
+  background-image: url("./assets/images/background-crew-desktop.jpg");
 }
 
 .planet {
@@ -109,6 +117,10 @@ hr {
   border-bottom: 1px solid white;
 }
 
+.btn-slider .active {
+  border: none;
+}
+
 .btn-nav {
   display: inline-block;
   position: relative;
@@ -121,7 +133,7 @@ hr {
   letter-spacing: 1.2px;
 }
 
-.dest-menu .btn-nav{
+.dest-menu .btn-nav, .crew-menu .btn-nav{
   padding: 0;
 }
 
@@ -161,7 +173,7 @@ main {
 }
 
 p {
-  line-height: 2rem;
+  line-height: 1.8rem;
 }
 
 h1 {
@@ -189,7 +201,7 @@ h2 {
 }
 
 /*sub Destination Navigation*/
-.dest-menu {
+.dest-menu, .crew-menu {
   display:flex;
   padding: 0;
   justify-content: space-between;
@@ -292,6 +304,32 @@ aside {
 
 /*media query 768====================================*/
 @media screen and (max-width: 768px) {
+
+  .homeBackground {
+    background-image: url("./assets/images/background-home-tablet.jpg");
+  }
+
+  .destBackground {
+    background-image: url("./assets/images/background-destination-tablet.jpg");
+  }
+
+  .crewBackground {
+    background-image: url("./assets/images/background-crew-tablet.jpg");
+  }
+
+
+nav {
+  padding: 0 0 0 0.4375rem;
+}
+
+  .med-image {
+    height: 35.75rem;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+
   h2 {
     text-align: center;
   }
@@ -321,6 +359,11 @@ aside {
     margin-left: 0;
   }
 
+  .menu {
+    justify-content: flex-end;
+    max-width: 830px;
+  }
+
   .article_1 {
     margin-left: 0;
     max-width: 31.125rem;
@@ -329,8 +372,12 @@ aside {
   width: 18.75rem;
 }
 
-  .dest-menu {
+  .dest-menu, .crew-menu {
     margin: 0 auto;
+  }
+
+  ul.crew-menu .active {
+    border: none;
   }
 
   .moon span {
@@ -356,7 +403,22 @@ aside {
 }
 /*===========================================================*/
 /*Media Query ==============================================*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+
+  .active {
+    border-left: 1px solid white;
+    padding: 11px 0 11px 1rem;
+    border-bottom:none;
+  }
+
+
+  .btn-nav {
+    padding: 11px 0 11px 1rem;
+    margin-right: 9px;
+  }
+
+
+
   h1 {
     font-size: 80px;
     text-align:center;

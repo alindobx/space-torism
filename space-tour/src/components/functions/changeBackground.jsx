@@ -1,6 +1,7 @@
-export const changeBackgroundImg = (backGImg1, backGImg2) => {
+export const changeBackgroundImg = (backGImg1) => {
     const getBackground  = document.body;
+    getBackground.className = '';
     getBackground.classList.add(backGImg1);
-    getBackground.classList.remove(backGImg2)
+
 }
 
