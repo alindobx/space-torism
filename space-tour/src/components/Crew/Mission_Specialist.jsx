@@ -16,6 +16,7 @@ export default function Mission_Specialist() {
                     <CrewNav/>
                 </div>
             </article>
+            <h3 className="crew-h3-2nd"><span>02</span> MEET YOUR CREW</h3>
             <article>
                 <img className="med-image" srcSet={Mark} alt="Mark Shuttleworth" />
             </article>

@@ -17,6 +17,7 @@ export default function Pilot() {
                     <CrewNav/>
                 </div>
             </article>
+            <h3 className="crew-h3-2nd"><span>02</span> MEET YOUR CREW</h3>
             <article>
                 <img className="med-image" src={Flyer} alt="Victor Glover" />
             </article>

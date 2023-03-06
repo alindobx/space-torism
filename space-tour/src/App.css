@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
 
-
 :root {
   --apha-white : rgb(255,255,255, 20%);
   --white: #fff;
@@ -8,6 +7,18 @@
   --font-family-bellefair: "Bellefair",serif;
   --font-family-berlow: "Barlow Condensed",sans-serif;
   --font-family-barlow-reg: 'Barlow', sans-serif;
+  --rem: 1rem;
+}
+
+html {
+
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x:hidden;
+  height: 100%;
 }
 
 h3 {
@@ -48,6 +59,11 @@ body {
 
 .planet {
   width: 27.8125rem;
+}
+
+
+.main-crew {
+  height: 85vh;
 }
 
 nav {
@@ -158,7 +174,6 @@ hr {
 main {
   display:flex;
   align-items: center;
-  height: 72vh;
   font-family: var(--font-family-barlow-reg);
   font-size: 1.2rem;
   justify-content: space-evenly;
@@ -405,16 +420,60 @@ nav {
 /*Media Query ==============================================*/
 @media screen and (max-width: 480px) {
 
+  html {
+    position: fixed;
+  }
+  .homeBackground {
+    background-image: url("./assets/images/background-home-mobile.jpg");
+  }
+
+  .destBackground {
+    background-image: url("./assets/images/background-destination-mobile.jpg");
+  }
+
+  .crewBackground {
+    background-image: url("./assets/images/background-crew-mobile.jpg");
+  }
+
+  .planet {
+    max-width: 10.625rem;
+    margin-top: 29px;
+  }
+
+.dest-menu, .crew-menu {
+  margin: 10px auto 0;
+}
+
+  .btn-nav:hover::after {
+    transform: none;
+    transform-origin: top;
+    height: 0;
+  }
+
+  .space-menu .active {
+    margin-left: 8px;
+    border-bottom: none;
+  }
+
+.main-crew {
+  height: 100vh;
+}
+
+.dest-menu .active {
+  border-bottom: 1px solid white;
+  border-left: none !important;
+}
+
   .active {
     border-left: 1px solid white;
     padding: 11px 0 11px 1rem;
-    border-bottom:none;
   }
 
 
   .btn-nav {
     padding: 11px 0 11px 1rem;
     margin-right: 9px;
+    font-size: 0.875rem;
   }
 
 
@@ -428,8 +487,29 @@ nav {
     font-size: 1rem;
   }
 
-  p{
+  h3 {
     font-size: 1rem;
+    text-align:right;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 3.5rem;
+  }
+
+  .distance h5, .travel h5 {
+    font-size: 0.875rem;
+    margin-top: 26px;
+  }
+
+  .moon-content-btm {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 26px;
+  }
+
+  p{
+    font-size: 0.9375rem !important;
     line-height: 1.5rem;
     padding: 0 15px;
   }
@@ -446,7 +526,7 @@ nav {
    }
 
    .moon-content {
-     width: 29.75rem;
+     max-width: 29.75rem;
    }
 
    .menu ul {
@@ -464,17 +544,18 @@ nav {
      height:100vh;
      align-items: normal;
      width: 238px;
-     right: 0;
+     right: -238px;
      box-shadow: 0 1px 20px rgb(0 0 0 / 25%);
-     transform: translateX(283px);
+     /*transform: translateX(283px);*/
      opacity: 0;
      transition: all 0.2s ease-in-out;
      background: linear-gradient(to top, rgba(255,255,255,0.19) 0%,rgba(255,255,255,0.22) 47%,rgba(255,255,255,0.33) 70%,rgba(255,255,255,0.46) 100%);
    }
 
    .menu.visible {
-     transform: translateX(0);
+     /*transform: translateX(0);*/
      opacity: 1;
+     right: 0;
    }
 
    .close-visible {

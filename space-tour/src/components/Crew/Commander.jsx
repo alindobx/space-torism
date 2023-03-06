@@ -15,6 +15,7 @@ export default function Commander() {
                     <CrewNav/>
                 </div>
             </article>
+            <h3 className="crew-h3-2nd"><span>02</span> MEET YOUR CREW</h3>
             <article>
                 <img className="med-image" src={Douglas} alt="Douglas Hurley" />
             </article>

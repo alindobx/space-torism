@@ -9,7 +9,7 @@ export default function AppNavigation() {
     const [toggle, setToggle] = useToggle();
     const mediaQueryEvent = {
         isTrusted : true,
-        media: "(min-width: 768px)",
+        media: "(min-width: 375px)",
         matches: true
     }
     const [mQuery, setMQuery] = useState({ matches:

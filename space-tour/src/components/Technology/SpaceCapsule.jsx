@@ -6,7 +6,7 @@ export default function SpaceCapsule() {
     return (
         <>
             <article className="tech-content">
-                <h3 className="crew-h3"><span>03</span> SPACE LAUNCH 101</h3>
+                <h3 className="tech-h3-2nd"><span>03</span> SPACE LAUNCH 101</h3>
                 <div className="inner-module">
                     <div className="space-slider">
                         <TechNav/>
@@ -23,18 +23,18 @@ export default function SpaceCapsule() {
             </article>
             <article>
                 <picture>
-                    <h3 className="crew-h3"><span>03</span> SPACE LAUNCH 101</h3>
-                    <source
-                        media = "(max-width: 1280px)"
-                        srcSet = {LandScape}
-                        sizes = "1280px"
-                    />
+                    <h3 className="tech-h3"><span>03</span> SPACE LAUNCH 101</h3>
                     <source
                         media = "(max-width: 768px)"
-                        srcSet = {Portrait}
+                        srcSet = {LandScape}
                         sizes = "768px"
                     />
-                    <img src={Portrait} alt="Landscape" />
+                    <source
+                        media = "(max-width: 1280px)"
+                        srcSet = {Portrait}
+                        sizes = "1280px"
+                    />
+                    <img className="space-image" src={Portrait} alt="Landscape" />
                 </picture>
             </article>
         </>
