@@ -19,8 +19,8 @@ export default function Home() {
                     relax because we’ll give you a truly out of this world experience!
                 </p>
             </article>
-            <aside>
-                <NavLink to="/home"><button className="btn">EXPLORE</button></NavLink>
+            <aside className="explore-btn">
+                <NavLink to="/destination/moon"><button className="btn">EXPLORE</button></NavLink>
             </aside>
         </>
     )

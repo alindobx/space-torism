@@ -7,6 +7,10 @@
     font-size: 1.125rem;
 }
 
+.logo .active {
+    border: none;
+}
+
 .dest-content h3 {
     text-align: left;
     margin-bottom: 10.3125rem;
