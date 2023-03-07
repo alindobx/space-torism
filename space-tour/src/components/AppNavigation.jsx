@@ -25,6 +25,7 @@ export default function AppNavigation() {
     const slideMenu = () => {
         const getHamburgerMenu = document.querySelector('.menu');
         getHamburgerMenu.classList.toggle('visible');
+        document.querySelector(".menu-back").classList.toggle('visible');
         const getCloseBtn = document.getElementById('close-hamburger');
         getCloseBtn.classList.toggle('close-visible');
         setToggle();
@@ -33,6 +34,7 @@ export default function AppNavigation() {
     return (
         <>
             { mQuery && !mQuery.matches ? (
+                <>
                 <nav>
                     <div className="logo">
                         <img src={logo} alt="space-logo"/>
@@ -43,7 +45,6 @@ export default function AppNavigation() {
                     <div className="menu">
                         <span className="space-line_2"><hr/></span>
                         <ul className="space-menu">
-
                             <NavLink  className="btn-nav" to= "/home"><li>HOME</li></NavLink>
                             <NavLink  className="btn-nav" to="/destination/moon"><li>DESTINATION</li></NavLink>
                             <NavLink className="btn-nav" to="/crew/commander"><li>CREW</li></NavLink>
@@ -51,6 +52,8 @@ export default function AppNavigation() {
                         </ul>
                     </div>
                 </nav>
+                <div className="menu-back"></div>
+                </>
             ) : (
                 <nav>
                 <div className="logo">

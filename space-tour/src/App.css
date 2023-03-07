@@ -440,6 +440,18 @@ nav {
     margin-top: 29px;
   }
 
+  .menu-back {
+    height: 100vh;
+    width: 238px;
+    background-color: #2723238c;
+    position: absolute;
+    z-index: -3;
+    right: 0;
+    top: 0;
+    filter: blur(8px);
+    display:none;
+  }
+
 .dest-menu, .crew-menu {
   margin: 10px auto 0;
 }
@@ -451,8 +463,8 @@ nav {
   }
 
   .space-menu .active {
-    margin-left: 8px;
     border-bottom: none;
+    padding-left: 7px;
   }
 
 .main-crew {
@@ -471,7 +483,7 @@ nav {
 
 
   .btn-nav {
-    padding: 11px 0 11px 1rem;
+    padding: 7px 10px;
     margin-right: 9px;
     font-size: 0.875rem;
   }
@@ -532,7 +544,7 @@ nav {
    .menu ul {
      align-items: normal;
      flex-direction: column;
-     margin-top: 7rem;
+     margin-top: 2rem;
      width: 238px;
      z-index: 1;
      position:absolute;
@@ -557,6 +569,10 @@ nav {
      opacity: 1;
      right: 0;
    }
+
+  .menu-back.visible {
+    display: block;
+  }
 
    .close-visible {
      display: none;
