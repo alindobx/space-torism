@@ -121,6 +121,10 @@ a.active .btn-slider {
         margin-left: 0.925rem;
     }
 
+    .logo .active {
+        border: none;
+    }
+
     .crew-h3-2nd {
         display: block;
         margin-top: 83px;

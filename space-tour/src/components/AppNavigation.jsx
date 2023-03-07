@@ -37,7 +37,7 @@ export default function AppNavigation() {
                 <>
                 <nav>
                     <div className="logo">
-                        <img src={logo} alt="space-logo"/>
+                        <NavLink to="/home"><img src={logo} alt="space-logo"/></NavLink>
                     </div>
                     <div className="close" onClick={slideMenu}>{toggle && <img id="close-icon" src={icon} alt="hamburger-menu"/>}
                         <img id="close-hamburger" src={hamburger} alt="hamburger-menu"/></div>
