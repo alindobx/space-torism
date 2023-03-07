@@ -2,7 +2,7 @@
 import CrewNav from "./CrewNav";
 import '../../assets/css/Crew.css'
 import Mark from "../../assets/images/image-mark-shuttleworth.png";
-export default function Mission_Specialist() {
+export default function MissionSpecialist() {
     return (
         <>
             <article className="crew-content">

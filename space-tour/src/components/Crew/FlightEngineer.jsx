@@ -1,7 +1,7 @@
 import CrewNav from "./CrewNav";
 import '../../assets/css/Crew.css'
 import Anousheh from "../../assets/images/image-anousheh-ansari.png";
-export default function Flight_Engineer() {
+export default function FlightEngineer() {
     return (
         <>
             <article className="crew-content">

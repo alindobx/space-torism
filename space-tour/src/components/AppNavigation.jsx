@@ -7,11 +7,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function AppNavigation() {
     const [toggle, setToggle] = useToggle();
-    const mediaQueryEvent = {
-        isTrusted : true,
-        media: "(min-width: 375px)",
-        matches: true
-    }
+
     const [mQuery, setMQuery] = useState({ matches:
         window.innerWidth > 375
     })

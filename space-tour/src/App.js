@@ -10,21 +10,14 @@ import Mars from "./components/Destination/Mars";
 import Europa from "./components/Destination/Europa";
 import Titan from "./components/Destination/Titan";
 import Commander from "./components/Crew/Commander";
-import Flight_Engineer from "./components/Crew/Flight_Engineer";
-import Mission_Specialist from "./components/Crew/Mission_Specialist";
+import FlightEngineer from "./components/Crew/FlightEngineer";
+import MissionSpecialist from "./components/Crew/MissionSpecialist";
 import Pilot from "./components/Crew/Pilot";
 import LaunchVehicle from "./components/Technology/LaunchVehicle";
 import SpaceCapsule from "./components/Technology/SpaceCapsule";
 import SpacePort from "./components/Technology/SpacePort";
 
 export default function App() {
-
-    const backgroundImg = {
-        home : "background-home-desktop.jpg",
-        destination : "background-destination=desktop.jpg",
-        crew: "background-crew-desktop.jpg",
-        technology: "background-technology-desktop.jpg"
-    }
 
   return (
       <>
@@ -38,9 +31,9 @@ export default function App() {
                     <Route path ="/" element={<Navigate to="/home" replace/>} />
                     <Route  path ="/crew" element={<Crew/>}>
                         <Route exact path ="commander" element = {<Commander/>}/>
-                        <Route exact path ="mission_specialist" element = {<Mission_Specialist/>}/>
+                        <Route exact path ="mission_specialist" element = {<MissionSpecialist/>}/>
                         <Route exact path ="pilot" element = {<Pilot/>}/>
-                        <Route exact path ="flight_engineer" element = {<Flight_Engineer/>}/>
+                        <Route exact path ="flight_engineer" element = {<FlightEngineer/>}/>
                     </Route>
                     <Route exact path ="/destination" element={<Destination/>} >
                         <Route exact path ="moon" element = {<Moon/>}/>
