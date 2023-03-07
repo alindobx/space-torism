@@ -9,7 +9,7 @@ export default function AppNavigation() {
     const [toggle, setToggle] = useToggle();
 
     const [mQuery, setMQuery] = useState({ matches:
-        window.innerWidth > 375
+        window.innerWidth > 480
     })
 
     useEffect(() => {
@@ -53,7 +53,7 @@ export default function AppNavigation() {
             ) : (
                 <nav>
                 <div className="logo">
-                    <img src={logo} alt="space-logo"/>
+                    <NavLink to="/home"><img src={logo} alt="space-logo"/></NavLink>
                 </div>
                 <div className="space-line"><hr/></div>
                 <div className="menu">

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import {changeBackgroundImg} from "./functions/changeBackground";
+import {NavLink} from "react-router-dom";
 
 export default function Home() {
 
@@ -19,7 +20,7 @@ export default function Home() {
                 </p>
             </article>
             <aside>
-                <button className="btn">EXPLORE</button>
+                <NavLink to="/home"><button className="btn">EXPLORE</button></NavLink>
             </aside>
         </>
     )
